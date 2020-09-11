@@ -1,0 +1,32 @@
+extends:
+  - "tslint:recommended"
+linterOptions:
+  exclude:
+    - ./node_modules/**/*
+    - "*.config.js"
+    - .babelrc.js
+
+rules: &UNIVERSAL_RULES
+  max-line-length:
+    options: [120]
+  space-before-function-paren: [true, "never"]
+  indent: [true, "spaces", 2]
+  semicolon: [true, "never"]
+  quotemark: [true, "single", "jsx-double"]
+  no-consecutive-blank-lines: false
+  member-access: false
+  arrow-parens: false
+  array-type: false
+  no-string-literal: false
+  whitespace: [false, "check-branch"]
+  object-literal-sort-keys: false
+  no-console: false
+  no-var-keyword: true
+  ordered-imports:
+    - true
+    - import-sources-order: any
+  curly: false
+
+
+jsRules:
+  <<: *UNIVERSAL_RULES

@@ -1,0 +1,14 @@
+# yarn - no zero install
+.yarn/*
+# !.yarn/cache
+!.yarn/releases
+# !.yarn/plugins
+# !.yarn/sdks
+!.yarn/versions
+/public
+/dist
+/yarn-error.log
+
+# just in case; we use yarn(v2)
+/node_modules
+/package-lock.json

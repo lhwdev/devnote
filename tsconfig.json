@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "es6",
+    "jsx": "preserve",
+    "allowJs": true,
+    "strictNullChecks": true,
+    "outDir": "dist",
+    "lib": ["dom", "es6"]
+  },
+  "include": [
+    "src/**/*"
+  ],
+}
