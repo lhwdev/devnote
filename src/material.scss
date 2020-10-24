@@ -1,0 +1,7 @@
+@import "./theme";
+
+
+@mixin surface() {
+	color: $color-text-on-surface;
+	background-color: $color-primary;
+}

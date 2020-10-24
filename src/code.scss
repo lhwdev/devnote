@@ -1,0 +1,62 @@
+@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@4/distr/fira_code.css);
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+
+
+code {
+	overflow: hidden;
+
+	font-family: "Fira code", monospace;
+	font-size: 13px;
+}
+
+.inline-code {
+	background: #5c5c5c13;
+	color: #26262b;
+
+	padding: 4px;
+	margin: 1px;
+	border-radius: 3px;
+}
+
+.block-code {
+	background: #20232b;
+	color: #a5a4aa;
+
+	display: block;
+	padding: 16px 18px;
+	margin: 8px;
+	border-radius: 12px;
+	box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.4);
+	resize: vertical;
+
+	::-webkit-resizer {
+		display: none;
+	}
+}
+
+.scroller {
+	overflow: auto;
+}
+
+.scroller::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+	border-radius: 4px;
+	background-clip: padding-box;
+}
+
+.scroller::-webkit-scrollbar-thumb {
+	width: 8px;
+	height: 8px;
+	border-radius: 4px;
+	background: linear-gradient(90deg, #c8c8c855 0%, #ffffff55 50%, #c8c8c855 100%);
+	background-clip: padding-box;
+}
+
+.scroller::-webkit-scrollbar-thumb:hover {
+	background: linear-gradient(90deg, #dddddd66 0%, #ffffff66 50%, #dddddd66 100%);
+}
+
+.scroller::-webkit-scrollbar-corner {
+	size: 0;
+}

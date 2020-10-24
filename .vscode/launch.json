@@ -1,19 +1,11 @@
 {
-  "version": "0.2.0",
-  "configurations": [
-    {
-      "type": "chrome",
-      "request": "launch",
-      "name": "Launch Chrome",
-      "url": "http://localhost:8080",
-      "webRoot": "${workspaceFolder}",
-      "sourceMaps": true,
-      "sourceMapPathOverrides": {
-        "webpack:///./*": "${webRoot}/*",
-        "webpack:///src/*": "${webRoot}/*",
-        "webpack:///*": "*",
-        "webpack:///./~/*": "${webRoot}/node_modules/*"
-      }
-    }
-  ]
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"command": "yarn start",
+			"name": "Run yarn start",
+			"request": "launch",
+			"type": "node-terminal"
+		}
+	]
 }

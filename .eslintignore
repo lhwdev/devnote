@@ -1,0 +1,7 @@
+# don't ever lint dependencies & caches
+.yarn
+.pjp.cjs
+# some modules still use node_modules/.cache even though we use yarn
+node_modules
+# don't lint build output (make sure it's set to your correct build folder name)
+dist

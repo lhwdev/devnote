@@ -1,5 +1,5 @@
 {
-  // See https://go.microsoft.com/fwlink/?LinkId=733558 
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
   // for the documentation about the tasks.json format
   "version": "2.0.0",
   "tasks": [
@@ -27,6 +27,14 @@
       "problemMatcher": [
         "$eslint-compact"
       ]
+    },
+    {
+			"type": "npm",
+			"script": "eslint .",
+      "problemMatcher": [
+        "$eslint-stylish"
+      ],
+      "label": "eslint: lint whole folder"
     }
   ]
 }

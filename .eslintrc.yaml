@@ -1,0 +1,92 @@
+
+---
+root: true
+
+env:
+  browser: true
+  es6: true
+  node: true
+  commonjs: true
+
+parser: "@typescript-eslint/parser"
+
+parserOptions:
+  project: "./tsconfig-for-eslint.json"
+  ecmaVersion: 6
+  sourceType: module
+  ecmaFeatures:
+    jsx: true
+
+plugins:
+  - "@typescript-eslint"
+  - "unused-imports"
+  - "react"
+
+extends:
+  - "plugin:@typescript-eslint/recommended"
+  - "plugin:react/recommended"
+
+settings:
+  react:
+    version: detect
+  "import/resolver":
+    alias:
+      map: [
+        ["$root", "./"]
+      ]
+
+rules:
+  no-constant-condition:
+    - off
+  # no-unused-vars:
+  #   - off # unused var warning in vscode is enough
+    - argsIgnorePattern: "^_"
+  unused-imports/no-unused-imports-ts:
+    - warn
+  no-unused-expressions:
+    - warn
+  no-unused-labels:
+    - warn
+  quotes: [error, single]
+  array-bracket-spacing: [error, never]
+  object-curly-spacing: [error, always]
+  eol-last: [error, always]
+  indent:
+    - error
+    - tab
+    - SwitchCase: 1
+  key-spacing:
+    - error
+    - beforeColon: false
+      afterColon: true
+  keyword-spacing:
+    - error
+    - after: true
+      overrides:
+        if:
+          after: false
+        else:
+          after: true
+        for:
+          after: false
+        do:
+          after: false
+        while:
+          after: false
+        this:
+          after: false
+        catch:
+          after: false
+        switch:
+          after: false
+  semi: [error, never]
+
+  "@typescript-eslint/explicit-module-boundary-types": off
+  "@typescript-eslint/no-unused-vars": off
+  "@typescript-eslint/no-explicit-any": off
+  "@typescript-eslint/no-this-alias": off
+  "@typescript-eslint/no-non-null-assertion": off
+
+  "react/jsx-equals-spacing":
+    - warn
+    - never

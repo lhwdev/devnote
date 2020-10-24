@@ -1,0 +1,25 @@
+@import "./theme";
+
+@import "./base";
+@import "./material";
+
+
+
+header.center-big {
+	position: relative;
+	@include surface();
+	background-color: $color-primary;
+	padding: 56px 16px 82px;
+	text-align: center;
+	box-sizing: content-box;
+}
+
+.fix-right-bottom {
+	position: absolute;
+	right: 28px;
+	bottom: 12px;
+}
+
+.faded-text-on-surface {
+	color: $color-text-on-surface-faded;
+}
