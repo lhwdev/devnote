@@ -18,7 +18,7 @@ import customElementPreInline from './scripts/customElementPreInline'
 import { highlightProcessor } from './scripts/highlight'
 import { markdown, markdownTree } from './scripts/markdown'
 import { NodeTag } from 'posthtml-parser'
-import { inspect } from 'util'
+
 
 
 
@@ -77,11 +77,7 @@ const result = (env: any, options: any): Configuration => {
 			highlightProcessor,
 			posthtmlExpressions({
 				locals: locals
-			}),
-			(tree) => { // dump
-				fs.writeFileSync('./dist/debug.js', inspect(tree, false, 15))
-				return tree
-			}
+			})
 		]
 	}) // end postHtmlPlugins = ...
 

@@ -5,14 +5,14 @@
 // Body
 
 :root {
-	font-size: 62.5%; // So that root size becomes 10px
+	font-size: $font-size-base;
 	font-family: $font-family-base;
 	tab-size: 4;
 }
 
 body {
 	// $font-size-base must be a rem value
-	font-size: $font-size-base;
+	// font-size: $font-size-base;
 	line-height: 1.618;
 	// max-width: 38em;
 	color: $color-text;
@@ -22,13 +22,13 @@ body {
 
 @media (max-width: 684px) {
 	body {
-		font-size: $font-size-base * 0.85;
+		font-size: $font-size-base;
 	}
 }
 
 @media (max-width: 382px) {
 	body {
-		font-size: $font-size-base * 0.75;
+		font-size: $font-size-base * 0.9;
 	}
 }
 
@@ -134,8 +134,6 @@ img {
 	margin-bottom: 2.5rem;
 }
 
-// Pre and Code
-@import "./code";
 
 // pre {
 // 	background-color: $color-bg-alt;
@@ -161,91 +159,91 @@ img {
 
 /* Tables */
 
-table {
-	text-align: justify;
-	width: 100%;
-	border-collapse: collapse;
-}
+// table {
+// 	text-align: justify;
+// 	width: 100%;
+// 	border-collapse: collapse;
+// }
 
-td,
-th {
-	padding: 0.5em;
-	border-bottom: 1px solid $color-bg-alt;
-}
+// td,
+// th {
+// 	padding: 0.5em;
+// 	border-bottom: 1px solid $color-bg-alt;
+// }
 
 // Buttons, forms and input
 
-input,
-textarea {
-	border: 1px solid $color-text;
+// input,
+// textarea {
+// 	border: 1px solid $color-text;
 
-	&:focus {
-		border: 1px solid $color-primary;
-	}
-}
+// 	&:focus {
+// 		border: 1px solid $color-primary;
+// 	}
+// }
 
-textarea {
-	width: 100%;
-}
+// textarea {
+// 	width: 100%;
+// }
 
-.button,
-button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
-	display: inline-block;
-	padding: 5px 10px;
-	text-align: center;
-	text-decoration: none;
-	white-space: nowrap;
+// .button,
+// button,
+// input[type="submit"],
+// input[type="reset"],
+// input[type="button"] {
+// 	display: inline-block;
+// 	padding: 5px 10px;
+// 	text-align: center;
+// 	text-decoration: none;
+// 	white-space: nowrap;
 
-	background-color: $color-primary;
-	color: $color-bg;
-	border-radius: 1px;
-	border: 1px solid $color-primary;
-	cursor: pointer;
-	box-sizing: border-box;
+// 	background-color: $color-primary;
+// 	color: $color-bg;
+// 	border-radius: 1px;
+// 	border: 1px solid $color-primary;
+// 	cursor: pointer;
+// 	box-sizing: border-box;
 
-	&[disabled] {
-		cursor: default;
-		opacity: 0.5;
-	}
+// 	&[disabled] {
+// 		cursor: default;
+// 		opacity: 0.5;
+// 	}
 
-	&:focus:enabled,
-	&:hover:enabled {
-		background-color: $color-accent;
-		border-color: $color-accent;
-		color: $color-bg;
-		outline: 0;
-	}
-}
+// 	&:focus:enabled,
+// 	&:hover:enabled {
+// 		background-color: $color-accent;
+// 		border-color: $color-accent;
+// 		color: $color-bg;
+// 		outline: 0;
+// 	}
+// }
 
-textarea,
-select,
-input {
-	color: $color-text;
-	padding: 6px 10px; // The 6px vertically centers text on FF, ignored by Webkit
-	margin-bottom: 10px;
-	background-color: $color-bg-alt;
-	border: 1px solid $color-bg-alt;
-	border-radius: 4px;
-	box-shadow: none;
-	box-sizing: border-box;
+// textarea,
+// select,
+// input {
+// 	color: $color-text;
+// 	padding: 6px 10px; // The 6px vertically centers text on FF, ignored by Webkit
+// 	margin-bottom: 10px;
+// 	background-color: $color-bg-alt;
+// 	border: 1px solid $color-bg-alt;
+// 	border-radius: 4px;
+// 	box-shadow: none;
+// 	box-sizing: border-box;
 
-	&:focus {
-		border: 1px solid $color-primary;
-		outline: 0;
-	}
-}
+// 	&:focus {
+// 		border: 1px solid $color-primary;
+// 		outline: 0;
+// 	}
+// }
 
-input[type="checkbox"]:focus {
-	outline: 1px dotted $color-primary;
-}
+// input[type="checkbox"]:focus {
+// 	outline: 1px dotted $color-primary;
+// }
 
-label,
-legend,
-fieldset {
-	display: block;
-	margin-bottom: 0.5rem;
-	font-weight: 600;
-}
+// label,
+// legend,
+// fieldset {
+// 	display: block;
+// 	margin-bottom: 0.5rem;
+// 	font-weight: 600;
+// }
